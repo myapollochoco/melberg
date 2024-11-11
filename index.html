@@ -1,712 +1,1251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>UIFUVE</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">	
-	<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
-<script src="https://unpkg.com/locomotive-scroll"></script>
-<script src="https://unpkg.com/gsap/dist/ScrollTrigger.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navigation Menu</title>
+    <link rel="stylesheet" href="styleuiseven.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body class="containerbody">
-	<div class="containerbody">
-		
+<body>
 
-	<div class="bg-line-wrap">
-		<div class="bg-line">
-			<div class="bg-line-border border-left-1"></div>
-			<div class="bg-line-border"></div>
-			<div class="bg-line-border"></div>
-			<div class="bg-line-border"></div>
-		</div>
-	</div>
+    <div id="profileDialogtwo" class="popup_one hidedialog">
+        <div id="dim_filter" class="popup_dim"></div>
+        <div class="profilemore zi_120 porel">
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <div class="profilemore_pp bgc_grey">N</div>
+                                        <div class="profilemore_text">
+                                            <p>Nora Jones</p>
+                                            <p class="profilemore_text_light">@nora.dsgn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <span class="material-symbols-outlined size-18 c_blue">check</span>
+                                    </div>
+                                </a>
+                                <!-- list --- -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <div class="profilemore_pp bgc_green">R</div>
+                                        <div class="profilemore_text">
+                                            <p>Ruben Amorim</p>
+                                            <p class="profilemore_text_light">@amorim.utd</p>
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right"></div>
+                                </a>
+                            </div>
+                            <!-- ----SECTIONS---------------- -->
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list dropdown_on">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                        <div class="profilemore_text">
+                                            <p>Themes</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right porel ">
 
-<!-- Top Navigation----------------------------------------- -->
-	<div class="container con-bg-1">
-		<div class="wrap">
-<!-- TOPNAV----------------------------------------------- -->
-			<div class="topnav loadup-target">
-				<div class="topnav_left">
-					<div class="topnav_logo">
-						Melberg
-					</div>
-				</div>
-				<div class="topnav_center">
-					<div class="topnav_menu">
-						<a href="">How it works</a>
-						<a href="">About</a>
-						<a href="">Products</a>
-						<a href="">Blog</a>
-					</div>
-				</div>
-				<div class="topnav_right">
-					<div class="topnav_cta">
-						<button class="btn-reg-ghost">Log In</button>
-						<button class="btn-reg">
-							<p>Sign up</p>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- </div> -->
+                                        <div class="profilemore_sub1">
+                                            <div class="profilemore_section no_border">
+                                                <div class="profilemore_list">
+                                                    <div class="profilemore_list_left">
+                                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                                        <div class="profilemore_text">
+                                                            <p>Themes</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profilemore_list_right"></div>
+                                                </div>
+                                                <div class="profilemore_list">
+                                                    <div class="profilemore_list_left">
+                                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                                        <div class="profilemore_text">
+                                                            <p>Themes</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profilemore_list_right"></div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-<!-- hero above the fold--------------------------------- -->
-	<!-- <div class="container"> -->
-		<div class="wrap">
-			<div class="hero">
-				<div class="hero_texts loadup-target">
-					<div class="hero_announcer marbot-24">
-						<span class="material-symbols-outlined size-20">notifications</span>
-						<p>New features has been arrived</p>
-						<a href="">Try Now</a>
-					</div>
-					<h1 class="marbot-24">Collaborate smarter with streamlined workflow</h1>
-					<div class="hero_form marbot-24">
-						<form>
-							<input type="email" name="email" placeholder="enter your email">
-							<button class="btn-reg">
-								<p>Get a demo</p>
-							</button>
-						</form>
-					</div>
-					<div class="hero_form_support">
-						<p>Privacy and security at every step of integration</p>
-					</div>
-				</div>
-				<div class="hero_art loadup-target delay-1400">
-<!-- calendar------------------------------------------ -->
-					<div class="hero_art_calendar shadow1">
-						<div class="calendar_topbar">
-							<p>Calendar</p>
-							<a href="" class="material-symbols-outlined size-20">close</a>
-							<!-- <a href="">Dismiss</a> -->
-							<!-- <p>Dismiss</p> -->
-						</div>
-						<div class="calendar_content">
-							<div class="calendar_app_name marbot-12">
-								<img src="zoomicon.svg">
-								<p>Zoom meeting</p>
-							</div>
-							<div class="calendar_date marbot-12">
-								<h2>Monday, 8 Mar</h2>
-								<p>10:00 - 11:15 AM</p>
-							</div>
-							<div class="calendar_support marbot-12">
-								<p>Created from:</p>
-								<img src="slack.svg">
-							</div>
-						</div>
-						<div class="calendar_foot">
-							<button class="btn-small">
-								<p>Confirm meet</p>
-							</button>
-							<div class="calendar_foot_toggle">
-								<a href="" class="material-symbols-outlined size-20">stack</a>
-								<a href="" class="material-symbols-outlined size-20">notifications</a>
-							</div>
-						</div>
-					</div>
-<!-- numbers------------------------------------------ -->
-					<div class="hero_art_numbers shadow1">
-						<p class="display1">3X</p>
-						<p>Double your team's priority with our cutting-edge solutions.</p>
-					</div>
-<!-- shortcuts------------------------------------------ -->
-					<div class="hero_art_shortcuts shadow1">
-						<div class="shortcuts_left">
-							<h3 class="marbot-3">Shortcuts</h3>
-							<p>Simplify access to main features</p>
-						</div>
-						<div class="shortcuts_right">
-							<div class="shortcuts_toggle">
-								<span class="material-symbols-outlined size-20">view_kanban</span>
-								<span class="material-symbols-outlined size-20">browse_activity</span>
-							</div>
-							<span class="material-symbols-outlined size-20">add</span>
-							<div class="shortcuts_toggle">
-								<span class="material-symbols-outlined size-20">keyboard_command_key</span>
-							</div>
-						</div>
-					</div>
+                                        <span class="material-symbols-outlined size-18">chevron_forward</span>
+                                    </div>
+                                </a>
+                                <!-- --- -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">settings</span>
+                                        <div class="profilemore_text">
+                                            <p>Settings</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right"></div>
+                                </a>
+                            </div>
+                            <!-- ------SECTIONS-------------- -->
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">globe</span>
+                                        <div class="profilemore_text">
+                                            <p>Community profile</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- -------SECTIONS------------- -->
+                            <div class="profilemore_section no_border bgc_grey_thin br_bottom">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">add</span>
+                                        <div class="profilemore_text">
+                                            <p>Add an existing account</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                                <!-- ------------------ -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">person</span>
+                                        <div class="profilemore_text">
+                                            <p>Manage accounts</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                                <!-- ------------------ -->
+                                <a href="../uinine/index.html" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">logout</span>
+                                        <div class="profilemore_text">
+                                            <p>Log Out</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    </div>
 
-					<!-- cards -->
-					<div class="hero_art_cards shadow1">
-						<!-- card1 -->
-						<div class="cards card_notion">
-							<div class="cards_top">
-								<span class="material-symbols-outlined size-14">note_stack</span>
-								<p>Notion</p>
-							</div>
-							<div class="cards_body">
-								<div class="cards_body_top">
-									<p class="marbot-6 color-sec">Task created</p>
-									<h4>Send the email invoice to Martin S</h4>
-								</div>
-								<div class="cards_body_bottom">
-									<p class="marbot-6 fw-600">Tuesday, 14 Mar</p>
-									<div class="cards_time">
-										<p class="border-right-1 padding-right-6 mari-6">9:23</p>
-										<p>Viet + Dani</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="cards_bottom"></div> -->
-						</div>
-						<!-- card2 -->
-						<div class="cards card_slack">
-							<div class="cards_top">
-								<span class="material-symbols-outlined size-14">ac_unit</span>
-								<p>Slack</p>
-							</div>
-							<div class="cards_body">
-								<div class="cards_body_top">
-									<p class="marbot-6 color-sec">Task created</p>
-									<h4>Send the email invoice to Martin S</h4>
-								</div>
-								<div class="cards_body_bottom">
-									<p class="marbot-6 fw-600">Tuesday, 14 Mar</p>
-									<div class="cards_time">
-										<p class="border-right-1 padding-right-6 mari-6">9:23</p>
-										<p>Viet + Dani</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="cards_bottom"></div> -->
-						</div>
-						<!-- card1 -->
-						<div class="cards card_trello">
-							<div class="cards_top">
-								<span class="material-symbols-outlined size-14">downloading</span>
-								<p>Notion</p>
-							</div>
-							<div class="cards_body">
-								<div class="cards_body_top">
-									<p class="marbot-6 color-sec">Task created</p>
-									<h4>Send the email invoice to Martin S</h4>
-								</div>
-								<div class="cards_body_bottom">
-									<p class="marbot-6 fw-600">Tuesday, 14 Mar</p>
-									<div class="cards_time">
-										<p class="border-right-1 padding-right-6 mari-6">9:23</p>
-										<p>Viet + Dani</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="cards_bottom"></div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="wrap">
-			
-		</div>
-	</div>
-
-<!-- BELOVED PARTNERS--------------------------------------- -->
-	<div class="container con-bg-2">
-		<div class="wrap">
-			<div class="partners">	
-				<div class="partners_head marbot-24 loadup-target">
-					<h3>Trusted by beloved partners and customers</h3>
-				</div>
-				<div class="partners_logos loadup-target">
-					<div class="partners_logos_row1">
-						<img src="logos/logo1.svg">
-						<img src="logos/logo2.svg">
-						<img src="logos/logo3.svg">
-						<img src="logos/logo4.svg">
-					</div>
-					<div class="partners_logos_row2">
-						<img src="logos/logo5.svg">
-						<img src="logos/logo6.svg">
-						<img src="logos/logo7.svg">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- features ---------------------------------------------- -->
-	<div class="container">
-		<div class="wrap">
-			<div class="features">
-<!-- features content--------------------------------------- -->
-				<div class="features_content loadup-target">
-					<div class="features_content_runners marbot-12">
-						<span class="material-symbols-outlined size-14">ac_unit</span>
-						<p>Create Invoices</p>
-					</div>
-					<h1 class="marbot-12">Simplify create your invoices in seconds</h1>
-					<p class="features_caption marbot-24">get your instant online store just by creating orbis account. add products and start selling</p>
-					<button class="btn-reg"><p>Create your invoices</p></button>
-				</div>
-<!-- features art------------------------------------------- -->
-				<div class="features_art loadup-target">	
-					<div class="features_art_wrap">
-						<img class="nudge-art1" src="photos/ava1.png">
-					</div>
-					<div class="features_sample1 loadup-target">
-						<div class="sample1_panel opa-25">
-							<img src="photos/pp1.jpg">
-							<div class="sample1_panel_names">
-								<h4 class="marbot-3">Patrick walker</h4>
-								<p>morning sir</p>
-							</div>
-						</div>
-						<div class="sample1_panel">
-							<img src="photos/pp2.jpg">
-							<div class="sample1_panel_names">
-								<h4 class="marbot-3">Alicia Lehmann</h4>
-								<p>how much is this?</p>
-							</div>
-						</div>
-						<div class="sample1_panel">
-							<img src="photos/pp1.jpg">
-							<div class="sample1_panel_names">
-								<h4 class="marbot-3">Patrick walker</h4>
-								<p>8.29 pounds sir</p>
-							</div>
-						</div>
-						<div class="sample1_panel">
-							<img src="photos/pp2.jpg">
-							<div class="sample1_panel_names">
-								<h4 class="marbot-3">Alicia Lehmann</h4>
-								<p>I got 50p, fuck u, bastard</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- --- -->
-			</div>
-		</div>
-	</div>
+    <div class="main-display">
+        <div id="snackbarCopied" class="snackbar_copied">
+            <span class="material-symbols-outlined size-16 c_green">check_circle</span>
+            <p>Copied successfully</p>
+        </div>
+        
+        <div class="side">
 
 
-	<!-- features ---------------------------------------------- -->
-	<div class="container">
-		<div class="wrap">
-			<div class="features no-padding">
-<!-- features content--------------------------------------- -->
-				<div class="features_content order2 loadup-target">
-					<div class="features_content_runners marbot-12">
-						<span class="material-symbols-outlined size-14">ac_unit</span>
-						<p>Operations</p>
-					</div>
-					<h1 class="marbot-12">Simplify invoice operations easily</h1>
-					<p class="features_caption marbot-24">get your instant online store just by creating orbis account. add products and start selling</p>
-					<button class="btn-reg"><p>Create your invoices</p></button>
-				</div>
-<!-- features art------------------------------------------- -->
-				<div class="features_art align-items-center loadup-target">	
-					<div class="features_art_wrap2">
-						<img class="nudge-art2" src="photos/ava3.png">
-					</div>
-<!-- CHART--------------------------------------------------- -->
-					<div class="features_sample_topright loadup-target">
-						<div class="sample1_panel_chart">
-							<p class="little_title">Income</p>
-							<div class="income_numbers">
-								<h3>$ 19,750</h3>
-								<div class="income_rate">
-									<span class="material-symbols-outlined size-14">trending_up</span>
-									<p>+3.5%</p>
-								</div>
-							</div>
-							<div class="income_chart">
-								<div style="height: 60%;" class="income_chart_bar"></div>
-								<div style="height: 56%;" class="income_chart_bar"></div>
-								<div style="height: 45%;" class="income_chart_bar"></div>
-								<div style="height: 75%;" class="income_chart_bar"></div>
-								<div style="height: 87%;" class="income_chart_bar"></div>
-								<div style="height: 32%;" class="income_chart_bar"></div>
-								<div style="height: 89%;" class="income_chart_bar"></div>
-								<div style="height: 56%;" class="income_chart_bar"></div>
-								<div style="height: 65%;" class="income_chart_bar"></div>
-								<div style="height: 77%;" class="income_chart_bar"></div>
-							</div>
-						</div>
-					</div>
-<!-- CHART--------------------------------------------------- -->
-					<div class="features_sample_botleft loadup-target">
-						<div class="sample1_panel_card">
-							<p class="sampel_card_title">Notification</p>
-							<h4>Your Money has been sent swiftly</h4>
-							<p class="sampel_card_caption">
-								now you can enjoy your money, happy spending day!
-							</p>
-							<button class="btn-small-pale">
-								<p>Check Status</p>
-							</button>
-						</div>
-					</div>
-					<div class="features_sample_topleft loadup-target">
-						<div class="sample1_panel_buble">
-							<img src="photos/pp4.jpg">
-							<div class="sample1_panel_buble_chat">
-								<p>how much is this?</p>
-								<h4 class="marbot-3">Alicia Lehmann</h4>
-								
-							</div>
-						</div>
-					</div>
-					<div class="features_sample_botright loadup-target">
-						<div class="sample1_panel">
-							<div class="panel_icon">
-								<span class="material-symbols-outlined size-14">trending_up</span>
-							</div>
-							<div class="sample1_panel_names">
-								<h4 class="marbot-3">Invoice Created</h4>
-								<p>Jan 24, 2024 09:00 PM</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- --- -->
-			</div>
-		</div>
-	</div>
+
+            
+
+            <div class="side-top">
+
+                <!-- logo -->
+                <div class="side-top-logo">
+                    <a href="../uifive/index.html" class="logo">
+                        <div class="logo-icon flex-c">
+                            <span class="material-symbols-outlined size-18">error_med</span>
+                         </div>
+                        <p>Melberg</p>
+                        <div class="pro">
+                            <p>pro</p>
+                        </div>
+                    </a>
+                    <!-- --- -->
+                    <a href="" class="icon-wrap">
+                        <span class="material-symbols-outlined size-20">right_panel_open</span>
+                    </a>
+                </div>
+
+                <!-- search -->
+                <div class="side-top-search">
+                    <input type="type" name="search" placeholder="Search">
+                    <div class="input-icon">
+                        <span class="material-symbols-outlined size-18">search</span>
+                    </div>
+                </div>
+
+                <!-- nav menu -->
+                <nav class="side-top-nav">
+                        <a class="nav-item active">
+                            <div class="icon-wrap-plain">
+                                <span class="material-symbols-outlined size-18">stacks</span>
+                            </div>
+                            <p>Stacks</p>
+                        </a>
+                        <!-- -- -->
+                        <a class="nav-item">
+                            <div class="icon-wrap-plain">
+                                <span class="material-symbols-outlined size-18">calendar_month</span>
+                            </div>
+                            <p>Calendar</p>
+                        </a>
+                        <!-- --- -->
+                        <a class="nav-item">
+                            <div class="icon-wrap-plain">
+                                <span class="material-symbols-outlined size-18">pan_tool</span>
+                            </div>
+                            <p>Tools</p>
+                        </a>
+                </nav>
+
+            </div>
+            <div class="side-bot">
+                <div class="side-bot-card">
+                    <div class="card_head">
+                        <div class="schedule_info">
+                            <div class="schedule_title">
+                                <div class="bullet"></div>
+                                <!-- <span class="material-symbols-outlined size-14">radio_button_unchecked</span> -->
+                                <p>Wenzo project evaluation</p>
+                            </div>
+                            <div class="schedule_time">
+                                <span class="material-symbols-outlined size-14">schedule</span>
+                                <p>12:30</p>
+                                <span class="material-symbols-outlined size-14">arrow_forward</span>
+                                <p>04:36</p>
+                            </div>
+                        </div>
+                        <a href="" class="icon-wrap icon-abs-r">
+                            <span class="material-symbols-outlined size-18">more_vert</span>
+                        </a>
+                    </div>
+
+                    <!-- members -->
+                    <div class="card_members">
+                        <img class="ml-0" src="photos/pp1.jpg">
+                        <img src="photos/pp5.jpg">
+                        <img src="photos/pp3.jpg">
+                        <a href="" class="members_more">
+                            <p>4+</p>
+                        </a>
+                    </div>
+
+                    <!-- cta -->
+                    <div class="card_cta">
+                        <button class="btn-regular-w w-100">
+                            <div>
+                                <img src="zoomicon.svg">
+                                <p>Go to Zoom link</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="side-bot-user">
+                    <div class="user_info">
+                        <div class="user_pp">
+                            <!-- <div class="dot_notif"></div> -->
+                            <img src="photos/pp4.jpg">
+                        </div>
+                        <div class="user_names">
+                            <p class="user_fullname">Jane Livermore</p>
+                            <p class="user_handle">janeiscool@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="porel">
+                        <a id="profileButton" class="icon-wrap">
+                            <span class="material-symbols-outlined size-18">unfold_more</span>
+                        </a>
+
+                        <!-- PROFILE MORE -->
+                        <div class="profilemore hidedialog" id="profileDialog">
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <div class="profilemore_pp bgc_grey">N</div>
+                                        <div class="profilemore_text">
+                                            <p>Nora Jones</p>
+                                            <p class="profilemore_text_light">@nora.dsgn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <span class="material-symbols-outlined size-18 c_blue">check</span>
+                                    </div>
+                                </a>
+                                <!-- list --- -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <div class="profilemore_pp bgc_green">R</div>
+                                        <div class="profilemore_text">
+                                            <p>Ruben Amorim</p>
+                                            <p class="profilemore_text_light">@amorim.utd</p>
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right"></div>
+                                </a>
+                            </div>
+                            <!-- ----SECTIONS---------------- -->
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list dropdown_on">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                        <div class="profilemore_text">
+                                            <p>Themes</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right porel ">
+
+                                        <div class="profilemore_sub1">
+                                            <div class="profilemore_section no_border">
+                                                <div class="profilemore_list">
+                                                    <div class="profilemore_list_left">
+                                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                                        <div class="profilemore_text">
+                                                            <p>Themes</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profilemore_list_right"></div>
+                                                </div>
+                                                <div class="profilemore_list">
+                                                    <div class="profilemore_list_left">
+                                                        <span class="material-symbols-outlined size-18">calendar_month</span>
+                                                        <div class="profilemore_text">
+                                                            <p>Themes</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profilemore_list_right"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <span class="material-symbols-outlined size-18">chevron_forward</span>
+                                    </div>
+                                </a>
+                                <!-- --- -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">settings</span>
+                                        <div class="profilemore_text">
+                                            <p>Settings</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <label class="switch"> 
+                                            <input type="checkbox"> 
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- ------SECTIONS-------------- -->
+                            <div class="profilemore_section">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">globe</span>
+                                        <div class="profilemore_text">
+                                            <p>Community profile</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- -------SECTIONS------------- -->
+                            <div class="profilemore_section no_border bgc_grey_thin br_bottom">
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">add</span>
+                                        <div class="profilemore_text">
+                                            <p>Add an existing account</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                                <!-- ------------------ -->
+                                <a href="" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">person</span>
+                                        <div class="profilemore_text">
+                                            <p>Manage accounts</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                                <!-- ------------------ -->
+                                <a href="../uinine/index.html" class="profilemore_list">
+                                    <div class="profilemore_list_left">
+                                        <!-- <div class="profilemore_pp">N</div> -->
+                                        <span class="material-symbols-outlined size-18">logout</span>
+                                        <div class="profilemore_text">
+                                            <p>Log Out</p>
+                                            <!-- <p class="profilemore_text_light">@nora.dsgn</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="profilemore_list_right">
+                                        <!-- <span class="material-symbols-outlined size-18">chevron_forward</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- PROFILE MORE END -->
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
 
 
-	<div class="container">
-		<div class="wrap">
-			<div class="challenge loadup-target">
-				<div class="challenge_card loadballet-target">
-					<!-- <img class="challenge_card_pic" src="photos/ava2.png"> -->
-					<h3 class="marbot-6">Marline Bettye</h3>
-					<div class="connecting">
-						<span></span>
-						<p>connecting..</p>
-					</div>
-					<div class="challenge_card_foot">
-						<div class="challenge_card_foot_user">
-							<img src="photos/pp1.jpg">
-							<div class="challenge_card_foot_user_name">
-								<p class="bold marbot-3">@marline.b</p>
-								<p>23m ago</p>
-							</div>
-						</div>
-						<button class="btn-small-white">
-							<p>Add Member</p>
-						</button>
-					</div>
-				</div>
-				<div class="challenge_displaytext">
-					<p class="loadup-target">Generations</p>
-				</div>
-				<div class="challenge_card_small loadballet-target delay-1400">
-					<!-- <img class="challenge_card_pic" src="photos/ava2.png"> -->
-					<h3 class="marbot-6">Lucienne</h3>
-					<div class="connecting">
-						<span></span>
-						<p>connecting..</p>
-					</div>
-					<div class="challenge_card_foot">
-						<div class="challenge_card_foot_user">
-							<img src="photos/pp1.jpg">
-							<div class="challenge_card_foot_user_name">
-								<p class="bold marbot-3">@marline.b</p>
-								<p>23m ago</p>
-							</div>
-						</div>
-						<button class="btn-small-white">
-							<p>Add Member</p>
-						</button>
-					</div>
-				</div>
+<!-- STAGE-------------------------------------------- -->
+        <div class="stage">
 
-				<div class="challenge_card_small2 loadballet-target delay-1600">
-					<!-- <img class="challenge_card_pic" src="photos/ava2.png"> -->
-					<h3 class="marbot-6">Lucienne</h3>
-					<div class="connecting">
-						<span></span>
-						<p>connecting..</p>
-					</div>
-					<div class="challenge_card_foot">
-						<div class="challenge_card_foot_user">
-							<img src="photos/pp1.jpg">
-							<div class="challenge_card_foot_user_name">
-								<p class="bold marbot-3">@marline.b</p>
-								<p>23m ago</p>
-							</div>
-						</div>
-						<button class="btn-small-white">
-							<p>Add Member</p>
-						</button>
-					</div>
-				</div>
+            
 
-			</div>
-		</div>
-	</div>
+            <!-- top part: breadcrumb,toggles, etc -->
+            <div class="container">
+                <div class="stage_top">
+
+                    <!-- left -->
+                    <div class="stage-top-left">
+
+                        <!-- next-backtoggle -->
+                        <div class="next_back">
+                            <button class="btn-toggle-wrapped">
+                                <span class="material-symbols-outlined size-18">chevron_backward</span>
+                            </button>
+                            <button class="btn-toggle-wrapped">
+                                <span class="material-symbols-outlined size-18">chevron_forward</span>
+                            </button>
+                        </div>
+
+                        <!-- breadcrumb -->
+                        <div class="breadcrumb">
+                            <a href="" class="">Melberg</a>
+                            <p>/</p>
+                            <a href="" class="">Stacks</a>
+                        </div>
+
+                    </div>
+
+                    <!-- center -->
+                    <div class="stage-top-center"></div>
+
+                    <!-- right -->
+                    <div class="stage-top-right">
+
+                        <button id="filterButton" class="btn-regular-w">
+                            <div>
+                                <span href="" class="material-symbols-outlined size-18">filter_list</span>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+
+                        <div class="date_switcher">
+                            <a class="switch_list switch_active">Day</a>
+                            <a class="switch_list">Week</a>
+                            <a class="switch_list">Month</a>
+                            <a class="switch_list">Year</a>
+                        </div>
+
+                        <a href="" class="icon-wrap-2">
+                            <div class="dot_notif">
+                                <p>6</p>
+                            </div>
+                            <span href="" class="material-symbols-outlined size-18">notifications</span>
+                        </a>
+                        <a href="" class="icon-wrap-2">
+                            <span href="" class="material-symbols-outlined size-18">add</span>
+                        </a>
+                        <a href="" class="icon-wrap-2">
+                            <span href="" class="material-symbols-outlined size-18">live_help</span>
+                        </a>    
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <!-- Title part----------------------------------------- -->
+            <div class="container" id="stickyHeader">
+                <div class="page_title">
+                    <div class="page_title_left">
+                        <h1 id="pageTitle">Stacks</h1>
+                    </div>
+                    <div class="page_title_right">
+                        <div class="porel">
+                            <button id="shareButton" class="btn-regular-w">
+                                <div>
+                                    <span href="" class="material-symbols-outlined size-18">reply</span>
+                                    <p>Share</p>
+                                </div>
+                            </button>
+                            <!-- share dropdown --> 
+                            
+                                <div class="share_dd hide" id="shareDialog">
+                                    <div class="dropdown">
+                                        <div class="dropdown_head">
+                                            <h4>Share with</h4>
+                                            <div class="f-h sb mb-16 h-32">
+                                                <img src="photos/pp1.jpg">
+                                                <img src="photos/pp2.jpg">
+                                                <img src="photos/pp3.jpg">
+                                                <img src="photos/pp4.jpg">
+                                                <img src="photos/pp5.jpg">
+                                                <div class="v_line_onwhite"></div>
+                                                <a href="" class="dd_search">
+                                                    <span href="" class="material-symbols-outlined size-18">search</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown_body mb-16">
+                                            <h4>Share links</h4>
+                                            <!-- list1 -->
+                                            <div class="f-h gap8 mb-8">
+                                                <div class="icon_wrap_round_40 bgc_grey_thin border_dark">
+                                                    <span href="" class="material-symbols-outlined size-20 color_s">notifications</span>
+                                                </div>
+                                                <div class="f-v gap4">
+                                                    <p class="fw-bold">Dennis x June</p>
+                                                    <p class="fs-12 color_dl">30m . amie.so/sd/9fdbk</p>
+                                                </div>
+                                            </div>
+                                            <!-- list2 -->
+                                            <div class="f-h gap8 mb-8">
+                                                <div class="icon_wrap_round_40 bgc_grey_thin border_dark border2">
+                                                    <span href="" class="material-symbols-outlined size-20 color_p">apps</span>
+                                                </div>
+                                                <div class="f-v gap4">
+                                                    <p class="fw-bold">Team onboarding</p>
+                                                    <p class="fs-12 color_dl">60m . amie.so/s/dd928b</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown_foot">
+                                            <div class="f-h gap8 p-8 bgc_grey_light br ">
+                                                <div class="w-100">
+                                                    <p class="p_title fs-12 mb-4">Create share link</p>
+                                                    <p class="p_caption">share all or specific slots</p>
+                                                </div>
+                                                <button class="btn-regular" onclick="copiedBar()">
+                                                    <div>
+                                                        <p>Copy</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <button class="btn-regular">
+                            <div>
+                                <span href="" class="material-symbols-outlined size-18">add</span>
+                                <p>Create Event</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="container">
+                <div class="main_content">
+
+                   <div class="grid_one">
+
+                        <!-- total_balance -->
+                        <div class="content_card content1">
+                            <!-- HEAD -->
+                            <div class="content_card_head">
+
+                                <!-- HEAD LEFT -->
+                                <div class="content_card_head_left">
+                                    <div class="total_balance_user">
+                                        <img src="photos/pp4.jpg">
+                                        <div class="user_names">
+                                            <p class="user_fullname">Jane Livermore</p>
+                                            <p class="user_handle">janeiscool@gmail.com</p>
+                                            <!-- <p class="user_fullname">Morning Jane</p> -->
+                                            <!-- <p class="user_handle">welcome back</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HEAD RIGHT -->
+                                <div class="content_card_head_rigt">
+                                    <button class="btn-regular-w">
+                                        <div>
+                                            <p>
+                                                Details
+                                            </p>
+                                        </div>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <!-- BODY -->
+                            <div class="content_card_body">
+
+                                <!-- TAB -->
+                                <div class="total_balance_tab side_padding_16">
+                                    <div class="total_balance_tab_wrap">
+                                        <a href="" class="tb_active">General</a>
+                                        <a href="" class="">Stats</a>
+                                        <a href="" class="">Cards</a>
+                                    </div>
+                                </div>
+
+                                <!-- total balance value -->
+                                <div class="total_balance_value side_padding_16">
+                                    <p class="value_title">Total balance</p>
+                                    <p class="bignum">
+                                        $19,572.83
+                                    </p>
+                                </div>
+
+                                <!-- total balance cardbank -->
+                                <div class="total_balance_cardbank_wrap side_padding_16">
+                                    <div class="total_balance_cardbank">
+
+                                        <div class="total_balance_cardbank_item">
+                                            <div class="cardbank_item_left">
+                                                <img src="photos/pp3.jpg">
+                                                <div class="cardbank_name">
+                                                    <p class="bold">Nord bank</p>
+                                                    <p>Mastercard . 7682</p>
+                                                </div>
+                                            </div>
+                                            <div class="cardbank_item_right">
+                                                <p>$587.12</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="total_balance_cardbank_item">
+                                            <div class="cardbank_item_left">
+                                                <img src="photos/pp2.jpg">
+                                                <div class="cardbank_name">
+                                                    <p class="bold">Amazon</p>
+                                                    <p>Visa . 7682</p>
+                                                </div>
+                                            </div>
+                                            <div class="cardbank_item_right">
+                                                <p>$587.12</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
 
 
-	<div class="container">
-		<div class="wrap">
-			<div class="benefits">
-				<div class="benefits_card">
-					<div class="benefits_card_head">
-						<span class="material-symbols-outlined size-40">trending_up</span>
-					</div>
-					<div class="benefits_card_text">
-						<h4>Multilayer Cool</h4>
-						<p>Hear me out i don't really understand what is this text about</p>
-					</div>
-				</div>
-				<!-- ------------------------------------- -->
+                                <!-- STOCK -->
+                                <div class="total_balance_stock side_padding_16">
+                                    <p class="value_title">Stock</p>
+                                    <div class="total_balance_stock_list">
+                                        <a href="" class="stock_item_add">
+                                            <span class="material-symbols-outlined size-14">add</span>
+                                        </a>
 
-				<div class="benefits_card">
-					<div class="benefits_card_head">
-						<span class="material-symbols-outlined size-40">landscape_2</span>
-					</div>
-					<div class="benefits_card_text">
-						<h4>Multilayer Cool</h4>
-						<p>Hear me out i don't really understand what is this text about</p>
-					</div>
-				</div>
-				<!-- ------------------------------------- -->
+                                        <a href="" class="stock_item">
+                                            <p>USD</p>
+                                            <span class="material-symbols-outlined size-14 c_green">trending_up</span>
+                                            <p>+1.56%</p>
+                                        </a href="">
 
-				<div class="benefits_card">
-					<div class="benefits_card_head">
-						<span class="material-symbols-outlined size-40">donut_large</span>
-					</div>
-					<div class="benefits_card_text">
-						<h4>Multilayer Cool</h4>
-						<p>Hear me out i don't really understand what is this text about</p>
-					</div>
-				</div>
-				<!-- ------------------------------------- -->
+                                        <a href="" class="stock_item">
+                                            <p>BTC</p>
+                                            <span class="material-symbols-outlined size-14 c_red">trending_down</span>
+                                            <p>+1.08%</p>
+                                        </a href="">
 
-			</div>
-		</div>
-	</div>
+                                        <a href="" class="stock_item">
+                                            <p>AAPL</p>
+                                            <span class="material-symbols-outlined size-14 c_green">trending_up</span>
+                                            <p>+1.25%</p>
+                                        </a href="">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- foot -->
+                            <div class="content_card_foot">
+                                <button class="btn_regular_alt w-100">
+                                    <div>
+                                        <p>Pay</p>
+                                    </div>
+                                </button>
+                                <button class="btn_regular_w_alt w-100">
+                                    <div>
+                                        <p>Exchange</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="content_card content2 pb-16">
+                            <!-- head -->
+                            <div class="content_card_head">
+                                <!-- HEAD LEFT -->
+                                <div class="content_card_head_left">
+                                    <div class="total_balance_user">
+                                        <span href="" class="material-symbols-outlined size-20 content_card_title_icon">directory_sync</span>
+
+                                        <!-- <h3 class="content_card_title">
+                                            Major Expenses
+                                        </h3> -->
+                                        
+                                        <div class="user_names">
+                                            <p class="user_fullname">Query Product</p>
+                                            <p class="user_handle">7.15M Requests . 9% . 764ms</p>
+                                            <!-- <p class="user_fullname">Morning Jane</p> -->
+                                            <!-- <p class="user_handle">welcome back</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HEAD RIGHT -->
+                                <div class="content_card_head_rigt">
+                                    <button class="btn-regular-w">
+                                        <div>
+                                            <span href="" class="material-symbols-outlined size-18">more_horiz</span>
+                                            <!-- <p>
+                                                Details
+                                            </p> -->
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- body -->
+                            <div class="content_card_body h_fc">
+                                <div class="cache">
+
+                                    <!-- cache_left -->
+                                    <div class="cache_left">
+                                        <p class="value_title">
+                                            Cache hit rate
+                                        </p>
+                                        <div class="cache_num">
+                                            <img src="photos/chartcircle.svg" class="img-32">
+                                            <p class="bignum">12.3%</p>
+                                        </div>
+                                        <div class="text_icon c_green">
+                                            <span href="" class="material-symbols-outlined size-16">arrow_outward</span>
+                                            <p>down from 19.6%</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- cache_right -->
+                                    <div class="cache_right">
+                                        <p class="value_title">
+                                            Max CHR
+                                        </p>
+                                        <div class="cache_num">
+                                            <!-- <img src="photos/chartcircle.svg" class="img-32"> -->
+                                            <p class="bignum">72.6%</p>
+                                        </div>
+                                        <div class="text_icon c_dark_light">
+                                            <p>CHR impact +5.4%</p>
+                                            <span href="" class="material-symbols-outlined size-16">help</span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cache bottom -->
+                                
+                            </div>
+
+                            <!-- foot -->
+                            <div class="content_card_foot f-v sb h-100 pt-16">
+                                <div class="cache_bottom  f-v sb h-100">
+                                        <!-- top -->
+                                        <div class="cache_bar side_padding_16">
+                                            <div class="f-h w-100 mb-6 fs-16 gap4">
+                                                <p>90.5 GB</p>
+                                                <p class="color_dl">(69.8%)</p>
+                                            </div>
+                                            <div class="f-h sb fs-12 color_dl">
+                                                <div>
+                                                    <div></div>
+                                                    <p>Cacheable bandwith</p>
+                                                </div>
+                                                <div class="f-h gap4 ">
+                                                    <span href="" class="material-symbols-outlined size-12">help</span>
+                                                    <p>$9.05</p>
+                                                    <span href="" class="material-symbols-outlined size-12">calendar_month</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- center -->
+                                        <div class="bar_center side_padding_16">
+                                            <div class="bar_base w-100">
+                                                <div class="bar_violet"></div>
+                                                <div class="bar_dark"></div>
+                                                <div class="white_fence">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- bottom -->
+                                        <div class="cache_detail side_padding_16">
+                                            <div class="f-h gap4 fs-12 color_dl mb-6">
+                                                <div class="dot"></div>
+                                                <p>Cached</p>
+                                                <p class="color_db fw-bold">12.8 GB</p>
+                                                <p>(9.8%)</p>
+                                            </div>
+
+                                            <div class="f-h gap4 fs-12 color_dl mb-6">
+                                                <div class="dot"></div>
+                                                <p>Non-Cacheable</p>
+                                                <p class="color_db fw-bold">26.3 GB</p>
+                                                <p>(20.3%)</p>
+                                            </div>
+
+                                            <div class="f-h gap4 fs-12 color_dl">
+                                                <!-- <div class="dot"></div> -->
+                                                <p>Total</p>
+                                                <p class="color_db fw-bold">129.6 GB</p>
+                                                <!-- <p>(9.8%)</p> -->
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="content_card content3">
+                            <!-- head -->
+                            <div class="content_card_head">
+                                <!-- HEAD LEFT -->
+                                <div class="content_card_head_left">
+                                    <div class="total_balance_user">
+                                        <span href="" class="material-symbols-outlined size-18 content_card_title_icon"><!-- trip_origin -->bar_chart</span>
+                                        
+                                        <h3 class="content_card_title">
+                                            Credit Score
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <!-- HEAD RIGHT -->
+                                <div class="content_card_head_rigt">
+                                    <button class="btn-regular-w">
+                                        <div>
+                                            <!-- <span href="" class="material-symbols-outlined size-18">more_horiz</span> -->
+                                            <p>
+                                                See all
+                                            </p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- body -->
+                            <div class="content_card_body p-8 h-100 scrollghost">
+                                <div class="actions">
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp3.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Rent payment</p>
+                                                    <p class="fs-12 color_dl">Monthly rent payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$940.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp1.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Donation to Liam</p>
+                                                    <p class="fs-12 color_dl">Chase Wallet</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$2245.90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                   
+                                                    <img src="photos/pp2.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Natalie's tuition</p>
+                                                    <p class="fs-12 color_dl">CBS bank</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$100.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp5.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Rent payment</p>
+                                                    <p class="fs-12 color_dl">Monthly rent payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$48.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp3.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Rent payment</p>
+                                                    <p class="fs-12 color_dl">Monthly rent payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$940.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp3.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Rent payment</p>
+                                                    <p class="fs-12 color_dl">Monthly rent payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$940.20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                    <!-- <span href="" class="material-symbols-outlined size-18">directory_sync</span> -->
+                                                    <img src="photos/pp1.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Donation to Liam</p>
+                                                    <p class="fs-12 color_dl">Chase Wallet</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$2245.90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions_item p-8">
+                                        <div class="f-h sb">
+                                            <div class="f-h gap8">
+                                                <div class="actions_item_ava">
+                                                   
+                                                    <img src="photos/pp2.jpg">
+                                                </div>
+                                                <div>
+                                                    <p class="fs-12 fw-bold mb-4">Natalie's tuition</p>
+                                                    <p class="fs-12 color_dl">CBS bank</p>
+                                                </div>
+                                            </div>
+                                            <div class="actions_item_amount">
+                                                <p class="fs-12">$100.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- foot -->
+                            <div class="content_card_foot p-16">
+                                <button class="btn-regular-w w-100">
+                                    <div>
+                                        <span href="" class="material-symbols-outlined size-18">add</span>
+                                        <p>Save a new action</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="content4 f-v gap16">
+                            <div class="content_card h-100">
+                                <!-- head -->
+                                <div class="content_card_head">
+                                    <!-- HEAD LEFT -->
+                                    <div class="content_card_head_left">
+                                        <div class="total_balance_user">
+                                            <span href="" class="material-symbols-outlined size-18 content_card_title_icon"><!-- trip_origin -->deployed_code</span>
+                                            
+                                            <h3 class="content_card_title">
+                                                Course Progress
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- HEAD RIGHT -->
+                                    <div class="content_card_head_rigt">
+                                        <button class="btn-regular-w">
+                                            <div>
+                                                <span href="" class="material-symbols-outlined size-18">more_horiz</span>
+                                                <!-- <p>
+                                                    Details
+                                                </p> -->
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- body -->
+                                <div class="content_card_body">
+                                    <div class="f-h w-100">
+                                        <div class="course_pie">
+                                            <svg class="progress-circle indefinite" width="100" height="100">
+                                              <g transform="rotate(-90,0,0)">
+                                                <circle class="bg" r="30" cx="-50" cy="50" fill="none"></circle>
+                                                <circle class="progress" r="30" cx="-50" cy="50" fill="none" style="animation: 1.6s linear 0s 1 normal none running progress-bar;stroke-dashoffset: 627.5px;stroke-linecap: round;"></circle>
+                                                <!-- <circle class="progress" r="120" cx="200" cy="200" fill="none"></circle> -->
+                                              </g>
+                                            </svg>
+
+                                            <svg width="0" height="0">
+                                              <defs>
+                                                <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                                                  <stop stop-color="#d487c5"/>
+                                                  <stop offset="100%" stop-color="#d487c5"/>
+                                                </linearGradient>
+                                              </defs>
+                                            </svg>
+                                        </div>
+
+                                        <div class="coursetext">
+                                            <div class="f-v w-100 gap6 p-16 pl-non">
+                                                <p class="fw-bold">Team diversity training</p>
+                                                <p class="fs-12-p c_dark_light">Designed to foster inclusivity and leverage diverse perspective</p>
+                                                <a class="btn-link" href="">
+                                                    <p>
+                                                        Resume Course
+                                                    </p>
+                                                    <span class="material-symbols-outlined size-18">arrow_right</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- foot -->
+                                <!-- <div class="content_card_foot"></div> -->
+                            </div>
+                            <!-- -- -->
+                            <div class="content_card h-100">
+                                <!-- head -->
+                                <div class="content_card_head">
+                                    <!-- HEAD LEFT -->
+                                    <div class="content_card_head_left">
+                                        <div class="total_balance_user">
+                                            <span href="" class="material-symbols-outlined size-18 content_card_title_icon"><!-- trip_origin --><!-- donut_large -->
+                                                podcasts
+                                            </span>
+                                            
+                                            <h3 class="content_card_title">
+                                                Training Analysis
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- HEAD RIGHT -->
+                                    <div class="content_card_head_rigt">
+                                        <button class="btn-regular-w">
+                                            <div>
+                                                <!-- <span href="" class="material-symbols-outlined size-18">more_horiz</span> -->
+                                                <p>
+                                                    Details
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- body -->
+                                <div class="content_card_body">
+                                    <div class="f-h w-100 h-100 gap8 p-16">
+                                        <div class="training_amount f-v w-100 h-100 gap8">
+                                            <div class="training_completed f-v gap4">
+                                                <p class="fw-bold color_db">12 Courses</p>
+                                                <p class="fs-12 color_dl">Completed in this quarter</p>
+                                            </div>
+                                            <div class="training_attended f-h h-100">
+                                                <div class="f-h">
+                                                    <img class="img_pp_28" src="photos/pp3.jpg">
+                                                    <img class="img_pp_28 ml--8" src="photos/pp4.jpg">
+                                                    <img class="img_pp_28 ml--8" src="photos/pp5.jpg">
+                                                </div>
+                                                <p class="fs-12 color_dl">Attended</p>
+                                            </div>
+                                        </div>
+                                        <div class="training_chart">
+                                           
+                                                <div class="chart_light" style="height: 50%;"></div>
+                                                <div class="chart_bold" style="height: 80%;"></div>
+                                                <div class="chart_light" style="height: 65%;"></div>
+                                                <div class="chart_bold" style="height: 70%;"></div>
+                                                <div class="chart_light" style="height: 55%;"></div>
+                                                <div class="chart_bold" style="height: 90%;"></div>
+                                                <div class="chart_light" style="height: 35%;"></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- foot -->
+                                <!-- <div class="content_card_foot"></div> -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="content4"></div> -->
+                   </div>
+
+                </div>
+            </div>
 
 
-	<div class="container">
-		<div class="wrap">
-			<div class="accordion">
-				<div class="accordion_left">
-					<div class="features_content loadup-target no-padding-all">
-						<div class="features_content_runners marbot-12">
-							<span class="material-symbols-outlined size-14">contactless</span>
-							<p>Use cases</p>
-						</div>
-						<h2 class="marbot-12">Templatize your processes</h2><!-- 
-						<p class="features_caption marbot-24">get your instant online store just by creating orbis account. add products and start selling</p>
-						<button class="btn-reg"><p>Create your invoices</p></button> -->
-					</div>
-
-					<div class="accordion_targets">
-						<div class="accordion_targets_card">
-							<div class="accordion_icon">
-								<span class="material-symbols-outlined size-16">donut_large</span>
-							</div>
-							<div class="accordion_desc">
-								<h4>Customer Success</h4>
-								<p>In this world that you can be a winner</p>
-							</div>
-						</div>
-
-						<div class="accordion_targets_card">
-							<div class="accordion_icon">
-								<span class="material-symbols-outlined size-16">contactless</span>
-							</div>
-							<div class="accordion_desc">
-								<h4>Customer Success</h4>
-								<p>Track onboarding progressx and improve time to value</p>
-							</div>
-						</div>
-
-						<div class="accordion_targets_card">
-							<div class="accordion_icon">
-								<span class="material-symbols-outlined size-16">local_mall</span>
-							</div>
-							<div class="accordion_desc">
-								<h4>Live Store</h4>
-								<p>Imagine the world in your hand</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
 
 
-				<div class="accordion_art">
-					<div class="cards card_notion first-card">
-							<div class="cards_top">
-								<span class="material-symbols-outlined size-14">note_stack</span>
-								<p>Notion</p>
-							</div>
-							<div class="cards_body">
-								<div class="cards_body_top">
-									<p class="marbot-6 color-sec">Task created</p>
-									<h4>Send the email invoice to Martin S</h4>
-								</div>
-								<div class="cards_body_bottom">
-									<p class="marbot-6 fw-600">Tuesday, 14 Mar</p>
-									<div class="cards_time">
-										<p class="border-right-1 padding-right-6 mari-6">9:23</p>
-										<p>Viet + Dani</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="cards_bottom"></div> -->
-					</div>
 
-					<div class="cards card_notion second-card">
-							<div class="cards_top">
-								<span class="material-symbols-outlined size-14">note_stack</span>
-								<p>Notion</p>
-							</div>
-							<div class="cards_body">
-								<div class="cards_body_top">
-									<p class="marbot-6 color-sec">Task created</p>
-									<h4>Send the email invoice to Martin S</h4>
-								</div>
-								<div class="cards_body_bottom">
-									<p class="marbot-6 fw-600">Tuesday, 14 Mar</p>
-									<div class="cards_time">
-										<p class="border-right-1 padding-right-6 mari-6">9:23</p>
-										<p>Viet + Dani</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="cards_bottom"></div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+    <!-- <nav class="side-nav">
+        <ul>
+            <li class="menu-item active">Home</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Services</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+    </nav> -->
 
 
-	<div class="container bg-grad-1">
-		<div class="wrap perspective-on">
-			<div class="cta">
-				<div class="hero_texts">
-					<div class="hero_announcer marbot-24">
-						<span class="material-symbols-outlined size-20">notifications</span>
-						<p>New features has been arrived</p>
-						<a href="">Try Now</a>
-					</div>
-					<h1 class="marbot-24">Collaborate smarter with streamlined workflow</h1>
-					<div class="hero_form marbot-24">
-						<form>
-							<input type="email" name="email" placeholder="enter your email">
-							<button class="btn-reg">
-								<p>Get a demo</p>
-							</button>
-						</form>
-					</div>
-					<div class="hero_form_support">
-						<p>Privacy and security at every step of integration</p>
-					</div>
-				</div>
-				<div class="gradient1"></div>
-			</div>
-		</div>
-	</div>
-
-
-	<footer>
-		<div class="container">
-			<div class="wrap">
-				<div class="footer_wrap">
-					<div class="footer_company">
-						<div class="topnav_logo marbot-12">
-						Melberg
-						</div>
-						<p class="marbot-24 opa-65">your beloved webdev from earth</p>
-						<div class="company_social marbot-16">
-							<a href=""><span class="material-symbols-outlined size-20">mail</span></a>
-							
-							<a href=""><span class="material-symbols-outlined size-20">alternate_email</span></a>
-
-							<a href=""><span class="material-symbols-outlined size-20">headphones</span></a>
-							
-						</div>
-						<a class="company_phone marbot-16" href="">
-							<span class="material-symbols-outlined size-16">call</span>
-							<p>+7 879 2040 6715</p>
-						</a>
-						<p class="marbot-3">Building 4, avenue street.</p>
-						<p>Kamakura, Japan</p>
-					</div>
-					<div class="footer_link1">
-						<p>Company</p>
-						<a href="">Benefits</a>
-						<a href="">Blog</a>
-						<a href="">subscribe</a>
-						<a href="">Documentation</a>
-					</div>
-					<div class="footer_link1">
-						<p>Site</p>
-						<a href="">Pricing</a>
-						<a href="">help</a>
-						<a href="">we're hiring</a>
-						<a href="">contact us</a>
-						<a href="">About us</a>
-					</div>
-					<div class="footer_link1">
-						<p>Utility</p>
-						<a href="">Company</a>
-						<a href="">Blog</a>
-						<a href="">subscribe</a>
-						<a href="">Documentation</a>
-					</div>
-				</div>
-
-				<!-- ------- -->
-
-				<div class="footer-foot">
-					<p>Copyright 2024. All Rights reserved</p>
-					<div class="foot-links">
-						<a href="">FAQ</a>
-						<a href="">Policy</a>
-						<a href="">Help</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- hero art flex -->
-	<!-- <div class="container">
-		<div class="wrap">
-			<div class="hero_art">
-				<div class="hero_art_left">
-					<div class="hero_art_left_up">
-						div.
-					</div>
-					<div class="hero_art_left_bottom"></div>
-				</div>
-				<div class="hero_art_right"></div>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- hero art grid -->
-	<!-- <div class="container">
-		<div class="wrap">
-			<div class="hero_art">
-				<div class="hero_art_panel">
-					test
-				</div>
-			</div>
-		</div>
-	</div> -->
-	</div>
-<script type="text/javascript" src="script.js"></script>
-<!-- <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script type="text/javascript" src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-<script type="text/javascript" src="locomotive-scroll.min.js"></script> -->
+    <script src="scriptuiseven.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>
-
 </html>
